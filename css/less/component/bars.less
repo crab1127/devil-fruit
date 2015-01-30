@@ -1,0 +1,194 @@
+//------------------条-----------------------------------
+
+.bar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: @bar-base-height;
+  padding-right: @bar-side-spacing;
+  padding-left: @bar-side-spacing;
+  background-color: @chrome-color;
+  border-bottom: @border-default;
+  -wekit-backface-visibility:hidden; 
+  backface-visibility: hidden;
+}
+
+.bar-header-secondary{
+  top: @bar-base-height;
+}
+
+.bar-footer {
+  bottom: 0;
+}
+
+.bar-footer-secondary{
+  bottom: @bar-base-height;
+}
+
+.bar-footer-secondary-tab{
+  bottom: @bar-tab-height;
+}
+
+.bar-footer,
+.bar-footer-secondary,
+.bar-footer-secondary-tab{
+  border-top:@border-default;
+  border-bottom: 0;
+}
+
+.bar-nav{
+  top: 0;
+}
+
+.title{
+  position: absolute;
+  display: block;
+  width:100%;
+  padding:0;
+  margin: 0 (-@bar-side-spacing);
+  font-size: @font-size-default;
+  font-weight: @font-weight;
+  line-height: @bar-base-height;
+  color: #000;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.title a{
+  color: inherit;
+}
+
+.bar-tab{
+  display: table;
+  bottom: 0;
+  width: 100%;
+  height: @bar-tab-height;
+  padding: 0;
+  table-layout: fixed;
+  border-tap: @border-default;
+  border-bottom: 0;
+
+  .tab-item {
+    display: table-cell;
+    width:1%;
+    height:@bar-tab-height;
+    color: #929292;
+    text-align: center;
+    vertical-align: middle;
+
+    &.active,
+    &:active{
+      color: @primary-color;
+    }
+
+    .icon{
+      top: 3px;
+      width: 24px;
+      height:24px;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      ~ .tab-label{
+        display: block;
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+
+//---------功能条与按钮-------------
+
+.bar .btn{
+  position: relative;
+  top: 7px;
+  z-index: 20;
+  padding: 6px 12px 7px;
+  margin-top: 0;
+  font-weight: @font-weight-light;
+
+  &.pull-right{
+    margin-left: @bar-side-spacing;
+  }
+  &.pull-left{
+    margin-left: @bar-side-spacing;
+  }
+}
+
+.bar .btn-link{
+  top:0;
+  padding:0;
+  font-size: 16px;
+  line-height: @bar-base-height;
+  color:@primary-color;
+  border:0;
+
+  &:active,
+  &.active{
+    color:darken(@primary-color, 10%)
+  }
+}
+
+
+.bar .btn-block{
+  top: 6px;
+  padding: 7px 0;
+  margin-bottom: 0;
+  font-size: 16px;
+
+}
+
+.bar .btn-nav{
+  &.pull-left{
+    margin-left: -5px;
+    
+    .icon-left-nav{
+      margin-right: -3px;
+    }  
+  }
+  &.pull-right{
+    margin-right: -5px;
+
+    .icon-right-nav{
+      marign-left:-3px;
+    }
+  }
+}
+
+
+// 与图标
+
+.bar{
+  .icon{
+    position: relative;
+    z-index: 20;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .btn .icon{
+    top:3px;
+    padding:0;
+  }
+
+  .title .icon{
+    padding:0;
+
+    &.icon-caret{
+      top:4px;
+      margin-left: -5px;
+    }
+  }
+}
+
+.bar input[type="search"]{
+  height: 29px;
+  margin: 6px 0;
+}
+
+.bar .segmented-control{
+  top:7px;
+  margin:0 auto;
+}

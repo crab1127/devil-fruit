@@ -1,0 +1,106 @@
+// -------------------Mixins--------------------------
+
+
+//clearfix
+.clearfix() {
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//----------css3--------------
+
+//shadow
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+//gradients 颜色渐变
+.linear-gradient(@color-from, @color-to) {
+  background-color: @color-from;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @color-from), color-stop(100%, @color-to)); //chrome safari4+
+  background-image: -webkit-linear-gradient(top, @color-from 0%, @color-to 100%); //chrome10+ safari5.1+
+  background-image: -moz-linear-gradient(top, @color-from 0%, @color-to 100%); //ff3.6
+  background-image: -ms-linear-gradient(top, @color-from 0%, @color-to 100%); //ie10
+  background-image: -o-linear-gradient(top, @color-from 0%, @color-to 100%); //opera
+  background-image: linear-gradient(top, @color-from 0%, @color-to 100%); //w3c
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{@color-from}',endColorstr='#{@color-to}', GradientType=0);
+}
+.linear-gradient(@color-from, @color-to, @deg: 45deg) {
+  background-color: @color-from;
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, @color-from), color-stop(100%, @color-to));
+  background-image: -webkit-gradient-linear(@deg, @color-from 0%, @color-to 100%);
+  background-image: -moz-gradient-linear(@deg, @color-from 0%, @color-to 100%);
+  background-image: -ms-gradient-linear(@deg, @color-from 0%, @color-to 100%);
+  background-image: -o-gradient-linear(@deg, @color-from 0%, @color-to 100%);
+  background-image: gradient-linear(@deg, @color-from 0%, @color-to 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#{@color-from}', endColorstr='#{@color-to}', GradientType=1);
+}
+
+
+//transform
+.transform(@transform) {
+  -webkit-fransform: @transform;
+  -ms-fransform: @transform;
+  fransform: @transform;
+}
+
+//transitions 过渡动画
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  transition: @transition;
+}
+.transition-property(@property) {
+  -webkit-transition-property: @property;
+  -moz-transition-property: @property;
+  transition-property: @property;
+}
+.transition-duration(@duration) {
+  -webkit-transition-duration: @duration;
+  -moz-transition-duration: @duration;
+  transition-duration: @duration;
+}
+.transition-timing-function(@function) {
+  -webkit-transition-timing-function: @function;
+  -moz-transition-timing-function: @function;
+  transition-timing-function: @function;
+}
+
+//animation 动画
+.animation-name(@name) {
+  -webkit-animation-name: @name;
+  -moz-animation-name: @name;
+  animation-name: @name;
+}
+.animation-duration(@duration) {
+  -webkit-animation-duration: @duration;
+  -moz-animation-duration: @duration;
+  animation-duration: @duration;
+}
+.animation-direction(@direction) {
+  -webkit-anmition-direction: @direction;
+  -moz-anmition-direction: @direction;
+  anmition-direction: @direction;
+}
+
+
+//--------------Misc-----------
+// .hairline(@type, @color, @offset) when (@type == single) {
+//   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#{$color}' x='0' y='0' width='100%' height='0.5'/></svg>");
+//   background-position:@offset 100%;
+//   background-repeat: no-repeat;
+// }
+// .hairline(@type, @color, @offset) when (@type == single) {
+//   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#{$color}' x='0' y='0' width='100%' height='0.5'/></svg>"),
+//                     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#{$color}' x='0' y='0' width='100%' height='0.5'/></svg>");
+//   background-position:@offset 100%;
+//   background-repeat: no-repeat;
+// }
+

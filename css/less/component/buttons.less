@@ -1,0 +1,153 @@
+//----------------------按钮------------------------
+
+.btn{
+  position: relative;
+  display: inline-block;
+  padding: 6px 8px 7px;
+  margin-bottom: 0;
+  font-size: @button-font-size;
+  font-weight: @font-weight-light;
+  line-height: 1;
+  color:#333;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: @chrome-color;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+  &:active,
+  &.active{
+    color: inherit;
+    background-color: #ccc
+  }
+
+  &:disabled,
+  &.disabled{
+    opacity: .6;
+  }
+}
+
+//主要的按钮
+.btn-primary{
+  color: #fff;
+  background-color: @primary-color;
+  border: 1px solid @primary-color;
+
+  &:active,
+  &.active{
+    color: #fff;
+    background-color: darken(@primary-color, 10%);
+    border:1px solid darken(@primary-color, 10%);
+  }
+}
+
+//确定的按钮(默认颜色是绿色)
+.btn-position{
+  color: #fff;
+  background-color: @positive-color;
+  border: 1px solid @positive-color;
+
+  &:active,
+  &.active{
+    color: #fff;
+    background-color: darken(@positive-color, 10%);
+    border:1px solid darken(@positive-color, 10%);
+  }
+}
+
+//否定的按钮(默认颜色是红色)
+.btn-negative {
+  color:#fff;
+  background-color: @negative-color;
+  border: 1px solid @negative-color;
+
+  &:active,
+  &.active{
+    color: #fff;
+    background-color: darken(@negative-color, 10%);
+    border: 1px solid @negative-color
+  }
+}
+
+//轮库按钮
+.btn-outlined{
+  background-color: transparent;
+
+  &.btn-primay {
+    color: @primary-color;
+  }
+  &.btn-positive{
+    color: @positive-color;
+  }
+  &.btn-negative{
+    color:@negative-color;
+  }
+
+  &.btn-primary:active,
+  &.btn-positive:active,
+  &.btn-negative:active{
+    color:#fff;
+  }
+
+}
+
+//Link button (Buttons that look like links)
+.btn-link {
+  padding-top: 6px;
+  padding-bottom:6px;
+  color: @primary-color;
+  background-color: transparent;
+  border:0;
+
+  &:active,
+  &.active{
+    color: darken(@primary-color, 10%);
+    background-color: transparent;
+  }
+}
+
+.btn-block{
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+  width:100%
+}
+
+//--------按钮和徽章--------------
+
+.btn .badge {
+  margin: -2px -4px;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.btn .badge-inverted,
+.btn:active .badge-inverted{
+  background-color: transparent;
+}
+.btn-primary:active .badge-inverted,
+.btn-positive:active .badge-inverted,
+.btn-negative:active .badge-inverted{
+  color: #fff;
+}
+
+.btn-block .badge{
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+//---------------按钮与图标---------------------
+.btn .icon{
+  font-size: inherit
+}

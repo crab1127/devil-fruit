@@ -1,0 +1,22 @@
+<div ms-controller="index">
+	<div class="slider">
+	  <div class="slide-group">
+	    <div class="slide" ms-repeat="slides"><a ms-href="{{el.href}}"><img ms-src="{{el.src}}" alt="" height="200"></a></div>
+	  </div>
+	</div>
+
+	<ul class="table-view">
+	  <li class="table-view-cell table-view-divider">
+	    展会一期
+	  </li>
+	  <li class="table-view-cell media" ms-repeat="items">
+	    <a ms-href="{{el.href}}" class="navigate-right">
+	      <img ms-src="{{el.img}}" alt="{{el.title}}" class="media-object pull-left">
+	      <div class="media-body">
+	       	{{el.title}}
+	        <p>{{el.desc}}</p>
+	      </div>
+	    </a>
+	  </li>
+	</ul>
+</div>
