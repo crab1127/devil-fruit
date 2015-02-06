@@ -1,7 +1,7 @@
 //------------------分栏， tab-------------------
 
 //使用table分栏
-.segmented-control {
+.columns {
   position: relative;
   display: table;
   overflow: hidden;
@@ -11,7 +11,7 @@
   border: 1px solid #ccc;
   border-radius: 3px;
 
-  .control-item{
+  .colm{
     display: table-cell;
     width: 1%;
     padding-top:6px;
@@ -38,10 +38,10 @@
 }
 
 //主色调
-.segmented-control-primary{
+.columns-primary{
   border-color:@primary-color;
 
-  .control-item{
+  .colm{
     color: @primary-color;
     border-color: inherit;
 
@@ -56,10 +56,10 @@
 }
 
 //
-.segmented-control-positive{
+.columns-positive{
   border-color: @positive-color;
 
-  .control-item{
+  .colm{
     color: @positive-color;
     border-color: inherit;
 
@@ -74,10 +74,10 @@
 }
 
 //
-.semented-control-negative{
+.columns-negative{
   border-color: @negative-color;
 
-  .control-item{
+  .colm{
     color: @negative-color;
     border-color: inherit;
 
@@ -91,10 +91,29 @@
   }
 }
 
-.control-content{
+//
+.columns-outlined{
+  background-color: transparent;
+  border-color: @chrome-color;
+  .colm{
+    color: @chrome-color;
+    border-color: inherit;
+
+    &:active{
+      color:#fff;
+      background-color: @primary-color;
+    }
+    &.active{
+      color:@primary-color;
+      background-color:  @chrome-color;
+    }
+  }
+}
+
+.colm{
   display: none;
 
   &.active{
-    display: block;
+   // display: block;
   }
 }

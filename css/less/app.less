@@ -9,14 +9,116 @@
 @import "base/base.less";
 
 //组件
-@import "component/buttons.less";
 @import "component/bars.less";
+@import "component/buttons.less";
 @import "component/badges.less";
 @import "component/cards.less";
 @import "component/table-view.less";
 @import "component/forms.less";
 @import "component/segmented-control.less";
 @import "component/icons.less";
+@import "component/popver.less";
 
 //js挂件
 @import "widget/slider.less";
+
+.ms-controller{
+    visibility: hidden;
+}
+//
+.time{
+	font-size: 75%;
+	color:#999;
+	margin-bottom: 10px;
+}
+.new-con{
+	padding: 10px;
+	h1{
+		font-size: 22px;
+		margin-top: 10px;
+	}
+}
+.new-attr{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	font-size: 75%;
+	color:#999;
+	border-bottom: 1px dotted #ddd; 
+}
+.pro-item{
+	.media-body{
+		color: @primary-color;
+		font-size: 14px;
+	}
+	.pro-val{
+		color:#333;
+	}
+}
+
+//产品中心
+.pro-con{
+	h1{
+		font-size: 20px;
+		margin-top: 10px;
+		
+	}
+	.pro-title{
+		padding:0 10px;
+	}
+	.columns{
+		font-size: 16px;
+		clear: both;
+	}
+	.pro-item{
+		padding: 10px;
+		font-size: 13px;
+		.badge{
+			margin-right:10px; 
+		}
+		> div{
+			color: @primary-color;
+			.pro-val{
+				color:#333;
+			}
+		}
+	}
+	.pro-desc{
+		padding:10px; 
+	}
+}
+.home-p{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	background: #fff;
+}
+.user-head{
+	padding-bottom: 80px;
+	background: #ccc;
+	&:before{
+		display: block;
+		content: '';
+		height: 200px;
+		background: url(../images/login-bg.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	.avatar{
+		position: absolute;
+		top:200px;
+		left: 50%;
+		margin-left: -45px;
+		margin-top: -55px;
+		.avatarP{
+			
+			background-color: rgba(255,255,255,.3);
+			padding: 10px;
+			border-radius: 50%;
+		}
+	}
+	img{
+		border-radius: 50%;
+	}
+}

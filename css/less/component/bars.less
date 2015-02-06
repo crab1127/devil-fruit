@@ -8,10 +8,11 @@
   height: @bar-base-height;
   padding-right: @bar-side-spacing;
   padding-left: @bar-side-spacing;
-  background-color: @chrome-color;
-  border-bottom: @border-default;
+  background-color: @primary-color;
+  //border-bottom: @border-default;
   -wekit-backface-visibility:hidden; 
   backface-visibility: hidden;
+  color: @chrome-color;
 }
 
 .bar-header-secondary{
@@ -50,7 +51,7 @@
   font-size: @font-size-default;
   font-weight: @font-weight;
   line-height: @bar-base-height;
-  color: #000;
+  //color: #000;
   text-align: center;
   white-space: nowrap;
 }
@@ -66,8 +67,9 @@
   height: @bar-tab-height;
   padding: 0;
   table-layout: fixed;
-  border-tap: @border-default;
+  border-top: @border-default;
   border-bottom: 0;
+  background-color:@chrome-color;
 
   .tab-item {
     display: table-cell;
@@ -102,7 +104,7 @@
 
 .bar .btn{
   position: relative;
-  top: 7px;
+  //top: 7px;
   z-index: 20;
   padding: 6px 12px 7px;
   margin-top: 0;
@@ -166,6 +168,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 24px;
+    color: @chrome-color
   }
 
   .btn .icon{

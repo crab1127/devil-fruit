@@ -34,6 +34,13 @@ module.exports = function(grunt) {
         files: {
           '<%= meta.devPath %>/<%= pkg.name%>.css': 'css/less/app.less'
         }
+      },
+      page : {
+        expand: true,
+        cwd: 'css/less/page/',
+        src: '*.less',
+        dest: 'css/dev/',
+        ext: '.css'
       }
     },
 

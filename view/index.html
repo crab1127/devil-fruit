@@ -1,19 +1,43 @@
 <div ms-controller="index">
-	<div class="slider">
+	<div class="slider" id="slider">
 	  <div class="slide-group">
-	    <div class="slide" ms-repeat="slides"><a ms-href="{{el.href}}"><img ms-src="{{el.src}}" alt="" height="200"></a></div>
+	    <div class="slide" ms-repeat="indexSlider"><a ms-href="#!/pro/{{el.id}}"><img ms-src="{{el.src}}" alt="" height="200"></a></div>
 	  </div>
 	</div>
 
-	<ul class="table-view">
+	<ul class="table-view" ms-visible="isshow">
 	  <li class="table-view-cell table-view-divider">
 	    展会一期
 	  </li>
-	  <li class="table-view-cell media" ms-repeat="items">
-	    <a ms-href="{{el.href}}" class="navigate-right">
-	      <img ms-src="{{el.img}}" alt="{{el.title}}" class="media-object pull-left">
+	  <li class="table-view-cell media" ms-repeat="sort" ms-if-loop="$index < 7">
+	    <a ms-href="#!/pro/?sort={{el.id}}" class="navigate-right">
+	      <img ms-src="{{el.img}}" alt="{{el.name}}" class="media-object pull-left" width="90" height="90">
 	      <div class="media-body">
-	       	{{el.title}}
+	       	{{el.name}}
+	        <p>{{el.desc}}</p>
+	      </div>
+	    </a>
+	  </li>
+	  <li class="table-view-cell table-view-divider">
+	    展会二期
+	  </li>
+	  <li class="table-view-cell media" ms-repeat="sort" ms-if-loop="$index > 7 && $index < 13">
+	    <a ms-href="#!/pro/?sort={{el.id}}" class="navigate-right">
+	      <img ms-src="{{el.img}}" alt="{{el.name}}" class="media-object pull-left" width="90" height="90">
+	      <div class="media-body">
+	       	{{el.name}}
+	        <p>{{el.desc}}</p>
+	      </div>
+	    </a>
+	  </li>
+	  <li class="table-view-cell table-view-divider">
+	    展会三期
+	  </li>
+	  <li class="table-view-cell media" ms-repeat="sort" ms-if-loop="$index > 13">
+	    <a ms-href="#!/pro/?sort={{el.id}}" class="navigate-right">
+	      <img ms-src="{{el.img}}" alt="{{el.name}}" class="media-object pull-left" width="90" height="90">
+	      <div class="media-body">
+	       	{{el.name}}
 	        <p>{{el.desc}}</p>
 	      </div>
 	    </a>
