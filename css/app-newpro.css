@@ -1213,7 +1213,7 @@ select {
   background: #fff;
 }
 .user-head {
-  padding-bottom: 80px;
+  padding-bottom: 10px;
   background: #ccc;
 }
 .user-head:before {
@@ -1224,18 +1224,134 @@ select {
   background-size: cover;
 }
 .user-head .avatar {
-  position: absolute;
-  top: 200px;
+  position: relative;
+  width: 102px;
   left: 50%;
-  margin-left: -45px;
-  margin-top: -55px;
+  margin-left: -51px;
+  margin-top: -51px;
+  text-align: center;
 }
 .user-head .avatar .avatarP {
   background-color: rgba(255, 255, 255, 0.3);
-  padding: 10px;
+  padding: 6px;
   border-radius: 50%;
+  margin-bottom: 6px;
 }
 .user-head img {
   border-radius: 50%;
+}
+.user-head .back {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+}
+.input-val {
+  padding: 8px 15px;
+}
+.login {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 100;
+  background: #ffffff url(../../images/login-bg.jpg) no-repeat;
+  background-size: cover;
+}
+.hidden {
+  display: hidden;
+}
+.login-w {
+  padding: 10px;
+}
+.login-w .icon {
+  color: #ffffff;
+}
+.login-w > form {
+  position: absolute;
+  top: 50%;
+  padding: 0 30px;
+  -webkit-transform: translate(0, -70%);
+  transform: translate(0, -70%);
+}
+.login-w > form .input-row {
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+.login-w > form .input-row > input {
+  width: 100%;
+  color: #fff;
+}
+.login-w img {
+  margin: 10px 0 50px;
+}
+.login-w .input-group {
+  background-color: transparent;
+}
+.login-w .input-row-btn {
+  margin-top: 20px;
+}
+.login-w .btn-block {
+  padding: 12px 0;
+}
+.login-w .sginIn {
+  color: #fff;
+}
+#popover {
+  top: 290px;
+  display: none;
+  margin-left: -90px;
+}
+#popover:before {
+  left: auto;
+  right: 10px;
+}
+#popover .media {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+#popover .media .pull-left {
+  margin-right: 10px;
+}
+.table-view {
+  padding: 10px;
+}
+.seller-foot {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+.bar-tool ~ .content {
+  padding-bottom: 50px;
+}
+.bar-tool {
+  display: table;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  table-layout: fixed;
+  border-top: 1px solid #dddddd;
+  border-bottom: 0;
+  background-color: #ffffff;
+}
+.bar-tool .tab-item {
+  display: table-cell;
+  width: 1%;
+  height: 50px;
+  color: #929292;
+  text-align: center;
+  vertical-align: middle;
+}
+.bar-tool .tab-item.active,
+.bar-tool .tab-item:active {
+  color: #e85737;
+}
+.bar-tool .tab-item .icon {
+  top: 0;
+}
+.bar-tool .tab-item .icon ~ .tab-label {
+  display: block;
+  font-size: 11px;
 }
 /*# sourceMappingURL=app-newpro.css.map */

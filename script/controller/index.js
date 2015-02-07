@@ -1,43 +1,37 @@
-define(['avalon', 'text!/view/index.html'], function(avalon, temp) {
+define(['avalon', 'text!index', 'slider'], function(avalon, temp, slide) {
 
   return function (el) {
     el.innerHTML = temp;
-    //avalon.templateCache.index = index
+
     var model = avalon.define({
         $id: "index",
-        slides : [
-          {"href" : "#!/pro/1", "src" : "http://placehold.it/480X200"},
-          {"href" : "#!/pro/2", "src" : "http://placehold.it/480X200"},
-          {"href" : "#!/pro/3", "src" : "http://placehold.it/480X200"},
-        ],
-        items : [
-            {
-              "href" : "#!/news/2",
-              "img" : "http://placehold.it/64x64",
-              "title" : "Ango",
-              "desc" : "Lorem ipsum dolor sit amet, consectetur."
-            },
-            {
-              "href" : "#!/news/2",
-              "img" : "http://placehold.it/64x64",
-              "title" : "Ango",
-              "desc" : "Lorem ipsum dolor sit amet, consectetur."
-            },
-            {
-              "href" : "#!/news/2",
-              "img" : "http://placehold.it/64x64",
-              "title" : "Ango",
-              "desc" : "Lorem ipsum dolor sit amet, consectetur."
-            },
-            {
-              "href" : "#!/news/2",
-              "img" : "http://placehold.it/64x64",
-              "title" : "Ango",
-              "desc" : "Lorem ipsum dolor sit amet, consectetur."
-            },
-          ]
+        isshow : true,
+        indexSlider : [],
+        sort : []
     })
-    //avalon.vmodels.app.page = "index"
+    
+    setTimeout(function(){
+      document.querySelector('#slider').addEventListener('slider');
+    },1)
+
+    
+    avalon.get(cfec.baseUrl + '/data/slider.json', function(data){
+      data = JSON.parse(data);
+      model.indexSlider = data.index;
+    }, 'json')
+
+    avalon.get(cfec.baseUrl + '/data/index.json', function(data){
+      //转为json
+      data = JSON.parse(data);
+
+      if (data && data.categories) {
+        model.sort = data.categories;
+      }     
+
+    }, 'json')   
+
+
     avalon.scan(el, model);
   }
 })
+

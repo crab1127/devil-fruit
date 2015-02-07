@@ -96,7 +96,7 @@
 	background: #fff;
 }
 .user-head{
-	padding-bottom: 80px;
+	padding-bottom: 10px;
 	background: #ccc;
 	&:before{
 		display: block;
@@ -106,19 +106,144 @@
 		background-size: cover;
 	}
 	.avatar{
-		position: absolute;
-		top:200px;
+		position: relative;
+		width: 102px;
 		left: 50%;
-		margin-left: -45px;
-		margin-top: -55px;
-		.avatarP{
-			
+		margin-left: -51px;
+		margin-top: -51px;
+		text-align: center;
+		.avatarP{			
 			background-color: rgba(255,255,255,.3);
-			padding: 10px;
-			border-radius: 50%;
+			padding: 6px;
+			border-radius: 50%;			
+			margin-bottom: 6px;
 		}
 	}
 	img{
 		border-radius: 50%;
 	}
+	.back{
+		position: absolute;top:10px;left:10px;
+		color:#fff;
+	}
+	
+}
+.input-val{
+	padding:8px 15px;
+}
+//login
+.login {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 100;
+	background: #fff url(../../images/login-bg.jpg) no-repeat;
+	background-size: cover;
+}
+.hidden{
+	display: hidden;
+}
+.login-w{
+	padding: 10px;
+	.icon{
+		color: #fff
+	}
+	> form{
+		position: absolute;
+		top: 50%;
+		padding: 0 30px;
+		-webkit-transform:translate(0, -70%);
+		transform:translate(0, -70%);
+		.input-row{
+			background-color: transparent;
+
+			> input{
+				width: 100%;
+				color:#fff;
+			}
+			margin-bottom: 10px;
+		}
+	}
+	img{
+		margin: 10px 0 50px
+	}
+	.input-group{
+		background-color: transparent;
+	}	
+	.input-row-btn{
+		margin-top: 20px;
+	}
+	.btn-block{
+		padding:12px 0;
+	}
+	.sginIn{
+		color: #fff;
+	}
+}
+//内容页
+#popover{
+	top:290px;
+	// left: 0;
+	// width: 100%;
+	display: none;
+	margin-left:-90px;
+	&:before {
+		left: auto;
+		right: 10px;
+	}
+	.media {
+		padding: 10px; 
+		border-bottom: 1px solid #ddd;
+		.pull-left{
+			margin-right: 10px
+		}
+	}
+}
+
+.table-view{
+	padding: 10px;
+}
+.seller-foot{
+	border-top: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+.bar-tool ~ .content{
+	padding-bottom: @bar-tab-height;
+}
+.bar-tool{
+  display: table;
+  bottom: 0;
+  width: 100%;
+  height: @bar-tab-height;
+  padding: 0;
+  table-layout: fixed;
+  border-top: @border-default;
+  border-bottom: 0;
+  background-color:@chrome-color;
+
+  .tab-item {
+    display: table-cell;
+    width:1%;
+    height:@bar-tab-height;
+    color: #929292;
+    text-align: center;
+    vertical-align: middle;
+
+    &.active,
+    &:active{
+      color: @primary-color;
+    }
+
+    .icon{
+      top: 0;
+
+      ~ .tab-label{
+        display: block;
+        font-size: 11px;
+      }
+    }
+    
+  }
 }
