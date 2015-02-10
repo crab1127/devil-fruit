@@ -1,4 +1,4 @@
-define(['avalon', 'text!index', 'slider'], function(avalon, temp, slide) {
+define(['avalon', 'text!indexview', 'slider'], function(avalon, temp, slide) {
 
   return function (el) {
     el.innerHTML = temp;

@@ -1,0 +1,100 @@
+{
+  "categories" : [
+    {
+        "name": "Building Materials", 
+        "id": "1", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902006.jpg", 
+        "desc": "Building and Decorative Materials"
+    }, 
+    {
+        "name": "Chemical Products", 
+        "id": "2", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902007.jpg", 
+        "desc": " Minerals Metallurgy and Non-Ferrous"
+    }, 
+    {
+        "name": "Consumer Goods", 
+        "id": "3", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902008.jpg", 
+        "desc": "Kitchenware & Tableware ersonal Care Products"
+    }, 
+    {
+        "name": "Electronics & Household Electrical Appliances", 
+        "id": "4", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902001.jpg", 
+        "desc": "Computer & Communication Products Consumer"
+    }, 
+    {
+        "name": "Food & Native Produce", 
+        "id": "5", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902015.jpg", 
+        "desc": "Food Native Produce"
+    }, 
+    {
+        "name": "Gifts", 
+        "id": "6", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902009.jpg", 
+        "desc": "Clocks, Watches & Optical Instruments"
+    }, 
+    {
+        "name": "Hardware & Tools", 
+        "id": "7", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902005.jpg", 
+        "desc": " Hardware Tools"
+    }, 
+    {
+        "name": "Home Decorations", 
+        "id": "8", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902010.jpg", 
+        "desc": " Art Ceramics Furniture"
+    }, 
+    {
+        "name": "Lighting Equipment", 
+        "id": "9", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902002.jpg", 
+        "desc": "Lighting Equipment"
+    }, 
+    {
+        "name": "Machinery", 
+        "id": "10", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902004.jpg", 
+        "desc": "Construction Machinery Small Machinery"
+    }, 
+    {
+        "name": "Medicines, Medical Devices and Health Products", 
+        "id": "11", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902012.jpg", 
+        "desc": "Medical Devices, Disposables and Dressings"
+    }, 
+    {
+        "name": "Office Supplies, Cases & Bags, and Recreation Products", 
+        "id": "12", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902011.jpg", 
+        "desc": "Bags & Cases Office Supplies "
+    }, 
+    {
+        "name": "Shoes", 
+        "id": "13", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902013.jpg", 
+        "desc": "Shoes "
+    }, 
+    {
+        "name": "Textiles & Garments", 
+        "id": "14", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902014.jpg", 
+        "desc": "Carpets & Tapestries Fashion Accessories"
+    }, 
+    {
+        "name": "Trading Service", 
+        "id": "15", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902016.jpg", 
+        "desc": "Trading Service"
+    }, 
+    {
+        "name": "Vehicles & Spare Parts", 
+        "id": "16", 
+        "img": "http://www.e-cantonfair.com//image/page/searchkeyword/indus-902003.jpg", 
+        "desc": "Bicycles Motorcycles"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+   "news" : [
+	    {"id" : "10", "src" : "http://gtms02.alicdn.com/tps/i2/TB1txbpHXXXXXabaXXXAzow0FXX-640-220.jpg"},    
+	    {"id" : "8", "src" : "http://gtms03.alicdn.com/tps/i3/TB1p9ftHXXXXXbmXVXXAzow0FXX-640-220.jpg"},
+	    {"id" : "7", "src" : "http://gtms02.alicdn.com/tps/i2/TB1r5BfHXXXXXczXVXXAzow0FXX-640-220.jpg"}
+   ],
+   "index" : [
+   	 {"id" : "414755", "src" : "http://www.e-cantonfair.com/sites/default/files/banner_20150202_1.jpg"},    
+	    {"id" : "420312", "src" : "http://www.e-cantonfair.com/sites/default/files/banner_20150202_2.jpg"},
+	    {"id" : "420153", "src" : "http://www.e-cantonfair.com/sites/default/files/banner_20150202_3.jpg"},
+	    {"id" : "410669", "src" : "http://www.e-cantonfair.com/sites/default/files/banner_4.png"}
+   ],
+   "pro" : [
+   	 {"id" : "420153", "src" : "http://i05.c.aliimg.com/cms/upload/2014/775/202/2202577_1609390509.jpg"},    
+	    {"id" : "414755", "src" : "http://i04.c.aliimg.com/cms/upload/2014/085/602/2206580_1609390509.jpg"}
+   ]
+}

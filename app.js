@@ -1,5 +1,13 @@
+if( /app/g.test(location.href)) {
+  require.config({
+    baseUrl: "/app/"
+  })
+} else {
+   require.config({
+    baseUrl: "/build/"
+  })
+}
 require.config({
-    baseUrl: "/app/",
     paths : {
       avalon : './vendor/avalon/avalon.mobile.shim',
       mmRequest : './vendor/avalon/mmRequest.modern',
@@ -11,8 +19,8 @@ require.config({
       css : './vendor/require/css',
 
       //页面
-      index : './view/index.html',
-      news : './view/news.html',
+      indexview : './view/index.html',
+      newsview : './view/news.html',
       pro : './view/pro.html',
       home : './view/home.html',
       login : './view/login.html',

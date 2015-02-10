@@ -1,0 +1,51 @@
+{
+    "product": {
+        "shortDescription": "10 WHITE FIBRE-OPTICAL LED LIGHTS IN A LINE W/LIGHT DISYANCE 10CM, LEAD WIRE 34CM, PRICE NOT INCLUDING BATTERY AA*3\r\n1PC/PVC BOX,48PC/BROWNBOX",
+        "model": "",
+        "categoryId": 2044,
+        "productName": "LED LIGHT",
+        "supplierId": 237446,
+        "groupName": "Lights & Lighting",
+        "categoryName": "LED Lighting Accessories",
+        "productId": 414758,
+        "payMethods": "L/C, T/T, D/P",
+        "keywords": {
+            "tag2": "light",
+            "tag1": "led "
+        },
+        "minOrder": "1000 Pieces",
+        "newest": 1,
+        "monthSupply": "50000 Pieces",
+        "startPort": "shanghai",
+        "videoUrl": null,
+        "fobPrice": "USD 1.39-1.53 per Piece"
+    },
+    "picture": {
+        "pic1": "http://img.e-cantonfair.com/group1/M00/35/C4/CqgBWVTIrw-AcHg8AABevaeHgr8131.jpg",
+        "pic2": "http://img.e-cantonfair.com/group1/M00/35/BF/CqgBWVTHVAWAEmEbAAHFLBpu1a8384.jpg",
+        "pic3": "http://img.e-cantonfair.com/group1/M00/5B/D9/CqgBUVTF8kuAEvpAAAAhRwURKsg697.jpg"
+    },
+    "company": {
+        "address": "NOooona",
+        "companyId": 269746,
+        "districtId": 1400,
+        "skype": "selupdate.20141218",
+        "countryId": 233,
+        "companyName": "HAoooTD",
+        "district": null,
+        "contacter": "yooog xooou",
+        "region": {
+            "province": "浙江省",
+            "city": "杭州市",
+            "town": "西湖区",
+            "provinceId": 11,
+            "cityId": 119,
+            "townId": 1400
+        },
+        "mainProduct": "Home textile, Home decoration, Furniture, Home accessories, Garden & Outdoor, Wooden decoration",
+        "visitTimes": 0,
+        "matchValue": 100,
+        "certificationNo": "ISO 9001:2000,ISO 9001:2008,ISO 14001:2004,SA8000,OHSAS 18001,Others"
+    },
+    "specifications": ""
+}

@@ -8,6 +8,36 @@ module.exports = function(grunt) {
       devPath: 'css',
       distPath: 'dist'
     },
+    // 参考http://nomospace.com/posts/r.js-example.build.js.html
+    requirejs : {
+      build : {
+        options : {
+          addDir :　'',
+          baseUrl : '',
+          dir : './build',
+          paths : {
+            'avalon' : './vendor/avalon/avalon.mobile.shim',
+            'mmRequest' : './vendor/avalon/mmRequest.modern',
+            'mmPromise' : './vendor/avalon/mmPromise',
+            'mmRouter' : './vendor/avalon/mmRouter',
+            'mmHistory' : './vendor/avalon/mmHistory',
+            'text' : './vendor/require/text',
+            'domReady' : './vendor/require/domReady',
+            'css' : './vendor/require/css',
+            'app' : './app',
+            'index' : './view/index.html',
+          },
+          shim: {
+            avalon : {
+              exports : 'avalon'
+            }
+          },
+          module: [{
+            name : 'app'
+          }]
+        }
+      } 
+    },
 
     banner: '/*!\n' + 
             ' * =======================================\n' +

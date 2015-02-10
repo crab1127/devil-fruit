@@ -1,0 +1,52 @@
+{
+    "product": {
+        "shortDescription": "Led Screen",
+        "model": "",
+        "categoryId": 2084,
+        "productName": "Led Screen",
+        "supplierId": 241785,
+        "groupName": null,
+        "categoryName": "LED Display",
+        "productId": 420312,
+        "payMethods": null,
+        "keywords": {
+            "tag2": "SCREEN",
+            "tag3": "LED",
+            "tag1": "LED"
+        },
+        "minOrder": null,
+        "newest": 1,
+        "monthSupply": null,
+        "startPort": "",
+        "videoUrl": null,
+        "fobPrice": null
+    },
+    "picture": {
+        "pic1": "http://img.e-cantonfair.com/group1/M00/35/93/CqgBWVS8wI-ASkyMAAByyJSsE60218.jpg",
+        "pic2": "http://img.e-cantonfair.com/group1/M00/35/9B/CqgBWVS-AlKAXvVtAAXpRJ3SRcY654.png",
+        "pic3": "http://img.e-cantonfair.com/group1/M00/5B/9C/CqgBUVS2Kz-ARvvPAAJJoaHzeoA557.jpg"
+    },
+    "company": {
+        "address": "13/F Canton Fair Tower, 679 Feng Pu Zhong Road, Guangzhou,510335, People's Republic of China",
+        "companyId": 273984,
+        "districtId": null,
+        "skype": "wangdj@cf-ec.com",
+        "countryId": 233,
+        "companyName": "CompanySearch",
+        "district": null,
+        "contacter": "DongJie Wang",
+        "region": {
+            "province": "广东省",
+            "city": "广州市",
+            "town": "天河区",
+            "provinceId": 19,
+            "cityId": 229,
+            "townId": 2526
+        },
+        "mainProduct": null,
+        "visitTimes": 0,
+        "matchValue": 100,
+        "certificationNo": "N/A"
+    },
+    "specifications": "Led ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed ScreenLed Screen"
+}
