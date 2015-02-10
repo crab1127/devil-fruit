@@ -1,0 +1,90 @@
+//------------------基本样式----------------------
+
+*,*:before,*:after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  font-family: @font-family-default;
+  font-size: @font-size-default;
+  line-height: @line-height-default;
+  color:#000;
+  background-color:#fff;
+}
+
+a{
+  color: @primary-color;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); //移除黑暗联系轮廓在webkit浏览器链接。
+  &:active {
+    color: darken(@primary-color, 10%)
+  }
+}
+
+//-------------定义全局的一个基本布局-------------------------
+//容器，包含主体内容
+.content{
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  overflow: auto;
+  background-color: #fff;
+  -webkit-overflow-scrolling: touch; //滚动 
+}
+
+//1.开启所有浏览器的GPU硬件加速
+.content > * {
+  .transform(translateZ(0)); // 1
+}
+
+.bar-nav ~ .content{
+  padding-top: @bar-base-height;
+}
+.bar-header-secondary ~ .content{
+  padding-top: (@bar-base-height*2)
+}
+
+.bar-footer ~ .content{
+  padding-bottom: @bar-base-height;
+}
+.bar-footer-secondary ~ .content{
+  padding-bottom: (@bar-base-height*2)
+}
+
+.bar-tab ~ .content{
+  padding-bottom: @bar-tab-height;
+}
+.bar-footer-secondary-tab ~ .content {
+  padding-bottom: (@bar-tab-height + @bar-base-height)
+}
+
+.content-padded{
+  margin: @bar-side-spacing;
+}
+.pull-left{
+  float:left;
+}
+.pull-right{
+  float:right;
+}
+.clearfix{
+  .clearfix()
+}
+
+.over{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ms-controller="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection"content="telephone=no, email=no" />
+  <meta name="fragment" content="!" />
+  <title>{{title}}_{{company}}</title>
+  <base href="http://local.e-cantonfair.com/app/" />
+  <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+  <link rel="apple-touch-startup-image" href="/startup.png">
+  <link rel="stylesheet" href="css/app-newpro.css">
+  <style>
+    .ms-controller{
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <header class="bar bar-nav">
+    <a class="pull-left icon icon-left-nav" ms-click="back()" ms-visible="isBack" href="javasript:;"></a>
+    <a class="pull-right icon icon-person" ms-click="goHome()" href="javascript:;"></a>
+    <h1 class="title" ms-text="title"></h1>
+  </header>
+  <nav class="bar bar-header-secondary">
+    <div class="columns columns-outlined">
+      <a class="colm" ms-repeat="newproMenu" ms-href="#!/{{el.path}}" ms-class="active: curPage == el.path" ms-text="el.title">'</a>
+    </div>
+  </nav>
+  <div class="content" id="main"></div>
+  
+  <script src="vendor/require/require.js" data-main="app"></script>
+</body>
+</html>
