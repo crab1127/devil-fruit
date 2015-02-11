@@ -1,0 +1,40 @@
+<div ms-controller="userCtrl">	
+	<div class="user-head">
+		<a class="pull-left icon icon-left-nav back" ms-click="back()" href="javasript:;"></a> 
+		<div class="avatar">
+			<div class="avatarP">
+			<img ms-src="userPhoto" alt="" class="media-object" width="90" height="90">
+			</div>
+			{{userName}}
+		</div>		
+		
+	</div>
+	<div class="cards">
+		<div class="input-groud">
+			<div class="input-row" ms-if="cantonfairId">
+				<label for="">Canton faire: </label>
+				<div class="input-val">{{cantonfairId}}</div>
+				<input type="hidden" name="" placeholder="babywang@qq.com">
+			</div>
+			<div class="input-row" ms-if="email">
+				<label for="">email:</label>
+				<div class="input-val">{{email}}</div>
+				<input type="hidden" name="" placeholder="babywang@qq.com">
+			</div>
+			<div class="input-row" ms-if="userName"><label for="">user Name:</label>
+				<div class="input-val">{{userName}}</div>
+			<input type="hidden" name="" placeholder="crab"></div>
+			<div class="input-row" ms-if="sex"><label for="">sex:</label>
+				<div class="input-val">{{sex}}</div>
+			</div>
+			<div class="input-row" ms-if="country"><label for="">country:</label><div class="input-val">{{country}}</div>
+			<div class="input-row" ms-if="companyEname"><label for="">company Ename:</label><div class="input-val">{{companyEname}}</div><input type="hidden" name="" placeholder="广电商"></div>
+			
+			<div class="input-row" ms-if="skype"><label for="">skype:</label><div class="input-val">{{skype}}<input type="hidden" name="" placeholder="215487"></div>
+			<div class="input-row" ms-if="facebook"><label for="">facebook:</label><div class="input-val">{{facebook}}</div><input type="hidden" name="" placeholder="215487"></div>
+		</div>
+	</div>
+	<!-- <div class="box">
+		<input type="submit" value="保存" class="btn btn-block btn-primary">
+	</div> -->
+</div>

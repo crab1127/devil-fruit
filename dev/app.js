@@ -1,5 +1,4 @@
 require.config({
-    baseUrl: "/app/",
     paths : {
       avalon : './vendor/avalon/avalon.mobile.shim',
       mmRequest : './vendor/avalon/mmRequest.modern',
@@ -11,21 +10,30 @@ require.config({
       css : './vendor/require/css',
 
       //页面
-      index : './view/index.html',
-      news : './view/news.html',
-      pro : './view/pro.html',
-      home : './view/home.html',
-      login : './view/login.html',
-      sginIn : './view/sginIn.html',
-      newCon : './view/newCon.html',
-      proCon : './view/proCon.html',
+      index : './views/index.html',
+      news : './views/news.html',
+      pro : './views/pro.html',
+      home : './views/home.html',
+      login : './views/login.html',
+      sginIn : './views/sginIn.html',
+      newCon : './views/newCon.html',
+      proCon : './views/proCon.html',
+
+      //controller
+      indexCtrl : './static/js/controller/index',
+      newsCtrl : './static/js/controller/news',
+      proCtrl : './static/js/controller/pro',
+      homeCtrl : './static/js/controller/home',
+      loginCtrl : './static/js/controller/login',
+      newConCtrl : './static/js/controller/newCon',
+      proConCtrl : './static/js/controller/proCon',
 
       //css
       //login : './css/dev/login.css',
 
       //插件
-      md5 : './script/widget/md5',
-      slider : './script/widget/sliders'
+      md5 : './static/js/widget/md5',
+      slider : './static/js/widget/sliders'
     },
     priority : ['text', 'css'],
     skim : {
@@ -38,13 +46,13 @@ require.config({
 
 //定义命名空间
 var cfec = cfec || {};
-cfec.baseUrl = '/app/'
+cfec.baseUrl = '';
 cfec.NAV = [
   {
     "id" : 1,
     "tittle" : "首页", 
     "path" : "/",
-    "template" : "/view/index.html"
+    "template" : "/views/index.html"
   },
   {
     "id" : 2,
@@ -55,13 +63,13 @@ cfec.NAV = [
         "id" : 21,
         "title" : "新品资讯",
         "path" : "news",
-        "template" :　"/view/new.html"
+        "template" :　"/views/new.html"
       },
       {
         "id" : 22,
         "title" : "行业新品",
         "path" : "pro",
-        "template" :　"/view/pro.html"
+        "template" :　"/views/pro.html"
       },
     ]
   },
@@ -69,7 +77,7 @@ cfec.NAV = [
     "id" : 3,
     "title" : "个人中心",
     "path" : "/home/:id",
-    "template" : '/view/home.html'
+    "template" : '/views/home.html'
   }
 ];
 
@@ -123,7 +131,7 @@ require(['avalon', 'mmRouter', 'mmRequest', 'domReady!'], function(){
       container.appendChild(el);
       loaded[state] = 1;
       avalon.scan(el, app);
-      require(['./script/controller/'+state], function(controller) {
+      require(['indexCtrl'], function(controller) {
         app.curPage = state;
         controller(el)
       })
@@ -154,7 +162,7 @@ require(['avalon', 'mmRouter', 'mmRequest', 'domReady!'], function(){
       container.appendChild(el);
       loaded[state] = 1;
       avalon.scan(el, app);
-      require(['./script/controller/'+state], function(controller) {
+      require(['./static/js/controller/'+state], function(controller) {
         app.curPage = state;
         controller(el)        
       })
@@ -174,7 +182,7 @@ require(['avalon', 'mmRouter', 'mmRequest', 'domReady!'], function(){
       container.appendChild(els['newCon']);
       loaded['newCon'] = 1;
       avalon.scan(els['newCon'], app);
-      require(['./script/controller/newCon'], function(controller) {
+      require(['newConCtrl'], function(controller) {
         app.curPage = 'newCon';
         callbackCache['newCon'] = controller
         controller(els['newCon'], path)
@@ -193,7 +201,7 @@ require(['avalon', 'mmRouter', 'mmRequest', 'domReady!'], function(){
       container.appendChild(els['proCon']);
       loaded['proCon'] = 1;
       avalon.scan(els['proCon'], app);
-      require(['./script/controller/proCon'], function(controller) {
+      require(['proConCtrl'], function(controller) {
         app.curPage = 'proCon';
         callbackCache['proCon'] = controller
         controller(els['proCon'], path)

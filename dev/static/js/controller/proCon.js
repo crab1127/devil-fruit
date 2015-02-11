@@ -1,4 +1,4 @@
-define(['avalon', 'text!proCon', 'css!/app/css/dev/newCon'], function (avalon, temp, newCon) {
+define(['avalon', 'text!proCon'], function (avalon, temp, newCon) {
 
   //http://www.e-cantonfair.com/cfone/showroomproduct/productsViewInfo.cf?productIds=568815
 

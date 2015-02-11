@@ -1,0 +1,70 @@
+<div ms-controller="proConCtrl" class="translate" >
+  <header class="bar bar-nav">
+    <a class="pull-left icon icon-left-nav" ms-click="back()" href="javasript:;"></a>
+    <a class="pull-right icon icon-person" ms-click="goHome()" href="javascript:;"></a> 
+    <h2 class="title">新品发布-广电商</h2>
+  </header>
+  <div class="content pro-con" >
+    <div class="slider" id="slider">
+      <div class="slide-group">
+        <div class="slide" ms-repeat="productImg"><a ms-href="{{el}}"><img ms-src="{{el}}" alt="" height="200" width="100%"></a></div>
+      </div>
+    </div>
+    <div class="pro-title">
+      <a class="pull-right icon icon-bars" ms-click='singletap' href="javascript:;"></a>
+      <h1>{{productName}}</h1>
+    </div>
+    <div class="columns">
+      <a href="javascript:;" class="colm" ms-class-active="currentIndex===1" ms-click="fnSwitch(1)">
+        Basic Info
+      </a>
+      <a href="javascript:;" class="colm" ms-class-active="currentIndex===2" ms-click="fnSwitch(2)">
+        Specifications
+      </a>
+    </div>
+    <div>
+      <div ms-visible="currentIndex===1" class="pro-item">
+          <div ms-if="fobPrice">fob Price: <span class="pro-val"> {{fobPrice}}</span></div>
+          <div ms-if="keywords">keyword: <span class="badge badge-positive" ms-repeat="keywords"> {{el}}</span></div>
+          <div ms-if="startPort">start Port: <span class="pro-val"> {{startPort}}</span></div>
+          <div ms-if="minOrder">min Order: <span class="pro-val"> {{minOrder}}</span></div>
+          <div ms-if="monthSupply">monthSupply: <span class="pro-val"> {{monthSupply}}</span></div>
+          <div ms-if="payMethods">pay Methods: <span class="pro-val"> {{payMethods}}</span></div>
+          <div ms-if="shortDescription">desc: <span class="pro-val"> {{shortDescription}}</span></div>
+      </div>
+      <div ms-visible="currentIndex===2" class="pro-desc">
+        {{specifications | html}}
+      </div>
+    </div>
+  </div>
+  <nav class="bar bar-tool">
+    <div class="tab-item">
+      <button class="btn btn-primary">
+      <span class="icon icon-star"></span>
+      收藏</button>
+    </div>
+    <div class="tab-item">      
+      <button class="btn btn-negative">
+        <span class="icon icon-edit"></span>
+      询盘</button>
+    </div>
+  </nav>
+  <div id="popover" class="popover">    
+    <div class="media clearfix">
+      <img ms-src="{{sellerImg}}" class="pull-left">
+      <div class="media-body">
+        {{CompanyName}}
+        <p><span class="ice">中国</span> {{region}}</p>
+      </div>
+    </div>
+    <ul class="table-view">
+      <li class="table-view-cell" ms-if="CorpContacter">Contact: {{CorpContacter}}</li>
+      <li class="table-view-cell" ms-if="CorpProduct">Product Range: {{CorpProduct}}</li>
+      <li class="table-view-cell" ms-if="CorpCertification">Certification: {{CorpCertification}}</li>
+      <li class="table-view-cell" ms-if="CorpSkype">Skype: {{CorpSkype}}</li>
+    </ul>
+    <div class="seller-foot">
+      <button ms-click="close" class="btn">关闭</button>
+    </div>
+  </div>
+</div>

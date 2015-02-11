@@ -5,38 +5,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     meta: {
-      devPath: 'css',
-      distPath: 'dist'
-    },
-    // 参考http://nomospace.com/posts/r.js-example.build.js.html
-    requirejs : {
-      build : {
-        options : {
-          addDir :　'',
-          baseUrl : '',
-          dir : './build',
-          paths : {
-            'avalon' : './vendor/avalon/avalon.mobile.shim',
-            'mmRequest' : './vendor/avalon/mmRequest.modern',
-            'mmPromise' : './vendor/avalon/mmPromise',
-            'mmRouter' : './vendor/avalon/mmRouter',
-            'mmHistory' : './vendor/avalon/mmHistory',
-            'text' : './vendor/require/text',
-            'domReady' : './vendor/require/domReady',
-            'css' : './vendor/require/css',
-            'app' : './app',
-            'index' : './view/index.html',
-          },
-          shim: {
-            avalon : {
-              exports : 'avalon'
-            }
-          },
-          module: [{
-            name : 'app'
-          }]
-        }
-      } 
+      devPath: 'dev',
+      distPath: 'publish/<%= pkg.version %>'
     },
 
     banner: '/*!\n' + 
@@ -58,35 +28,35 @@ module.exports = function(grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>.css.map',
-          sourceMapFilename: '<%= meta.devPath %>/<%= pkg.name %>.css.map',
+          sourceMapFilename: '<%= meta.devPath %>/static/css/<%= pkg.name %>.css.map',
           banner: '<%= banner %>'
         },
         files: {
-          '<%= meta.devPath %>/<%= pkg.name%>.css': 'css/less/app.less'
+          '<%= meta.devPath %>/static/css/<%= pkg.name%>.css': '<%= meta.devPath %>/static/less/app.less'
         }
       },
       page : {
         expand: true,
-        cwd: 'css/less/page/',
+        cwd: 'static/less/page/',
         src: '*.less',
-        dest: 'css/dev/',
+        dest: '<%= meta.devPath %>/static/css/',
         ext: '.css'
       }
     },
 
-    cssmin: {
-      development: {
-        files: {
-          '<%= meta.distPath %>/css/<%= pkg.name %>.css': '<%= meta.devPath %>/<%= pkg.name %>.css'
-        }
-      }
-    },
+    // cssmin: {
+    //   development: {
+    //     files: {
+    //       '<%= meta.distPath %>/css/<%= pkg.name %>.css': '<%= meta.devPath %>/<%= pkg.name %>.css'
+    //     }
+    //   }
+    // },
 
     copy: {
       fonts: {
         expand: true,
-        src: 'css/fonts/*',
-        dest: '<%= meta.distPath%>'
+        src: '<%= meta.devPath %>/static/fonts/*',
+        dest: '<%= meta.distPath%>/static/fonts'
       }
     },
 
@@ -101,6 +71,65 @@ module.exports = function(grunt) {
         },
         src: '<%= meta.distPath %>/docs.css'
       }
+    },
+    // 参考http://nomospace.com/posts/r.js-example.build.js.html
+    requirejs : {
+      build : {
+        options : {
+          appDir :　'./<%= meta.devPath %>',
+          baseUrl : './',
+          dir : './<%= meta.distPath %>',
+          paths : {
+            'avalon' : './vendor/avalon/avalon.mobile.shim',
+            'mmRequest' : './vendor/avalon/mmRequest.modern',
+            'mmPromise' : './vendor/avalon/mmPromise',
+            'mmRouter' : './vendor/avalon/mmRouter',
+            'mmHistory' : './vendor/avalon/mmHistory',
+            'text' : './vendor/require/text',
+            'domReady' : './vendor/require/domReady',
+            'css' : './vendor/require/css',
+
+            //view
+            'index' : './views/index.html',
+            'news' : './views/news.html',
+            'pro' : './views/pro.html',
+            'home' : './views/home.html',
+            'login' : './views/login.html',
+            'sginIn' : './views/sginIn.html',
+            'newCon' : './views/newCon.html',
+            'proCon' : './views/proCon.html',
+
+            //entry
+            'app' : './app',
+
+            //contraller
+            'indexCtrl' : './static/js/controller/index',
+            'newsCtrl' : './static/js/controller/news',
+            'proCtrl' : './static/js/controller/pro',
+            'newConCtrl' : './static/js/controller/newCon',
+            'proConCtrl' : './static/js/controller/proCon',
+            'homeCtrl' : './static/js/controller/home',
+            'loginCtrl' : './static/js/controller/login',            
+
+            'md5' : './static/js/widget/md5',
+            'slider' : './static/js/widget/sliders'
+          },
+          shim: {
+            avalon : {
+              exports : 'avalon'
+            }
+          },
+          optimizeCss : 'standard.keepLines',
+          modules: [{
+            name : 'app',
+            include : ['text','slider']
+          },{
+            name : 'indexCtrl',
+            exclude : ['avalon','text','slider']
+          }
+          ]
+        }
+      } 
     },
     watch: {
       client: {

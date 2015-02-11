@@ -1,0 +1,23 @@
+<div ms-controller="proCtrl">
+  <div class="slider" id="slider">
+    <div class="slide-group">
+      <div class="slide" ms-repeat="slides"><a ms-href="#!/pro/{{el.id}}"><img ms-src="{{el.src}}" alt="" height="200"></a></div>
+    </div>
+  </div>
+  <ul class="table-view">
+    <li class="table-view-cell media pro-item" ms-repeat="items">
+      <a ms-href="#!/pro/{{el.productId}}">
+        <h4>{{el.productName}}</h4>
+        <img ms-src="{{el.productImg}}" ms-alt="{{el.productName}}" class="media-object pull-left" width="120" height="120">
+        <div class="media-body">
+          <div ms-if="el.score">score: <span class="pro-val"> {{el.score}}</span></div>
+          <div ms-if="el.fob">fob: <span class="pro-val"> {{el.fob}}</span></div>
+          <div ms-if="el.supplyAblilit">supply Ablilit: <span class="pro-val"> {{el.supplyAblilit}}</span></div>
+          <div ms-if="el.minorder">min order: <span class="pro-val"> {{el.minorder}}</span></div>
+          <div ms-if="el.paymentTems">payment Tems: <span class="pro-val"> {{el.paymentTems | slice(15)}}</span></div>
+          <div ms-if="el.productIntroduction">desc: <span class="pro-val"> {{el.productIntroduction | slice(30)}}</span></div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

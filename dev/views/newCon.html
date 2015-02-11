@@ -1,0 +1,17 @@
+<div ms-controller="newConCtrl" class="translate" >
+  <header class="bar bar-nav">
+    <a class="pull-left icon icon-left-nav" ms-click="back()" href="javasript:;"></a>
+    <!-- <a class="pull-right icon icon-bars" ms-on-tap='singletap' href="javascript:;"></a> -->
+    <h2 class="title">广电商</h2>
+  </header>
+  <div class="content new-con">
+    <h1>{{newTitle}}</h1>
+    <div class="new-attr">{{newTime}}</div>
+    <div>
+      <img ms-src="{{newImg}}" alt="{{newTitle}}" width="100%">
+    </div>
+    <div>
+      {{newCon | html}}
+    </div>
+  </div>
+</div>

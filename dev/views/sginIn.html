@@ -1,0 +1,56 @@
+<div  ms-controller="sginInCtrl">
+  <header class="bar bar-nav">
+    <a href="javascript:;" class="pull-left icon icon-left-nav" ms-click="back">返回</a>
+    <h1 class="title">注册账号</h1>
+  </header>
+  <div class="content">
+    <form method="post" ms-on-submit="sginIn">
+      <h4>Creat Your e-Cantonfair Account</h4>
+      <div class="card">
+        <div class="input-groud">
+          <div class="input-row">
+            <label for="email">Email: </label>
+            <input type="text" name="email" placeholder="" ms-duplex-number="email">
+          </div>
+          <div class="input-row">
+            <label for="cantonfairId">Conton Fair ID: </label>
+            <input type="text" name="cantonfairId" placeholder="" ms-duplex="cantonfairId">
+          </div>
+          <div class="input-row">
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="crab" ms-duplex="password">
+          </div>
+          <div class="input-row">
+            <label for="password">Confirm Password:</label>
+            <input type="password" name="ConfirmPassword" placeholder="" ms-duplex="confirmPassword">
+          </div>      
+        </div>
+      </div>
+      <h4>Your Contact Infp</h4>
+      <div class="card">
+        <div class="input-ground">
+          <div class="input-row">
+            <label for="firstName">Full Name:</label>
+            <input type="text" name="firstName" id="" ms-duplex="firstName">
+          </div>
+          <div class="input-row">
+            <label for="companyName">Company:</label>
+            <input type="text" name="companyName" id="" ms-duplex="company">
+          </div>
+          <div class="input-row">
+            <label for="countryId">Country/Region:</label>
+            <input type="text" name="countryId" id="" ms-duplex="countryId">
+          </div>
+          <div class="input-row">
+            <label for="">Telephone:</label>
+            <input type="text" name="phoneCode" id="" ms-duplex="phoneCode">
+          </div>
+        </div>
+      </div>
+
+      <div style="margin:10px">
+        <input type="submit" value="保存" class="btn btn-block btn-primary">
+      </div>
+    </form>
+  </div>
+</div>

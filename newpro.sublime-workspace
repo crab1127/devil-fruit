@@ -1,0 +1,540 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pos",
+				"pos-a	position: absolute;"
+			],
+			[
+				"tex",
+				"text-indent"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"str",
+				"str"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"on",
+				"onchange	Attr"
+			],
+			[
+				"file",
+				"fileSrc"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"else",
+				"elements"
+			],
+			[
+				"ty",
+				"typeof"
+			],
+			[
+				"a",
+				"args"
+			],
+			[
+				"els",
+				"elements"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"el",
+				"elements"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"clear",
+				"cleartime"
+			],
+			[
+				"im",
+				"important"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "dev/app.js",
+			"settings":
+			{
+				"buffer_size": 5530,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/index.html",
+			"settings":
+			{
+				"buffer_size": 1628,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 3206,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"strip_tags('asdf')",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/web/app-newpro",
+		"/D/web/app-newpro/dev",
+		"/D/web/app-newpro/dev/static",
+		"/D/web/app-newpro/dev/static/css",
+		"/D/web/app-newpro/dev/static/js",
+		"/D/web/app-newpro/script"
+	],
+	"file_history":
+	[
+		"/C/Users/crab1_000/Desktop/tfr/index.css",
+		"/C/Users/crab1_000/Desktop/tfr/index.html",
+		"/C/Users/crab1_000/Desktop/crab.1.0.0.js",
+		"/C/Users/crab1_000/Downloads/51CTO下载-JavaScript设计模式源代码（共18章节）打包下载/JavaScript设计模式源代码（共18章节）打包下载/Chapter01/1.03 - The mutability of objects.js",
+		"/D/QQ/191815416/FileRecv/新建文件夹/index.html",
+		"/D/svn/source/sites/all/themes/cantonfair/css/index.css",
+		"/C/Users/crab1_000/Desktop/trunk/code/source/sites/all/themes/cantonfair/css/index.css",
+		"/C/Users/crab1_000/AppData/Roaming/Sublime Text 3/Packages/User/php.sublime-build",
+		"/C/Users/crab1_000/Desktop/练习.html",
+		"/C/Users/crab1_000/Desktop/22.html",
+		"/C/Users/crab1_000/Desktop/钟表.html",
+		"/D/svn/source/sites/all/themes/cantonfair/templates/index.tpl.php",
+		"/C/Users/crab1_000/Desktop/联系.html",
+		"/C/Users/crab1_000/Desktop/html.php",
+		"/C/Users/crab1_000/Desktop/改.html",
+		"/D/QQ/191815416/FileRecv/新建文件夹/sy.css",
+		"/D/svn/source/sites/all/themes/cantonfair/css/print.css",
+		"/D/svn/source/sites/all/themes/cantonfair/new/new/new/css/admin_9947b49_9947b49_9947b49.css",
+		"/D/svn/source/sites/all/themes/cantonfair/new/new/css/admin_9947b49_9947b49.css",
+		"/D/svn/source/sites/all/themes/cantonfair/new/css/admin_9947b49.css",
+		"/C/Users/crab1_000/Desktop/Untitled-6.htm",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/cfone/page/store/css/frame.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/cfone/css/frame.min.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/css/frame.min.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/cfone/css/frame.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/cfone/frame.min.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/css/frame.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/cfone/frame.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/modules/forum/forum-rtl.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/fis-conf.js",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/sitemap.html",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/360search/css/search.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/search/search.html",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/buyer-service-app.html",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/css/page/skype_en.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/categories.html",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/en/company_events.html",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/live-build/node_modules/less/test/css/extend-nest.css",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/cfone/page/searchkeyword/search_keyword_alpha.jsp"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"script",
+			"view",
+			"length",
+			"argument",
+			"checkFileChange",
+			"section topic",
+			"carousel-top-banner",
+			"alert",
+			"alert(Skype.alert",
+			"alert(",
+			"\"timer_\"",
+			"showDropdown",
+			"i",
+			"trySkypeUri_IE9_IE8",
+			"trySkypeUri_Generic",
+			"a",
+			"a(",
+			"fLogin",
+			"addCustomer",
+			"tryAnalyzeSkypeUri",
+			"skype",
+			"http://src.house.sina.com.cn/imp/imp/deal/6a/3a/c/bf6fd230d4d313da11d4fb61829_p1_mk1.jpg",
+			"http://src.house.sina.com.cn/imp/imp/deal/48/29/d/98f46e5ef5e5465331537fb5aae_p1_mk1.jpg",
+			"console",
+			"sky",
+			"skp",
+			"SkypeButton",
+			"SkypeButton100",
+			"SkypeButton",
+			"initSkypeBtn",
+			"skype",
+			"alert",
+			"alt",
+			"updateCss",
+			"img",
+			"tryAnalyzeSkypeUri",
+			"installSkypeMsg",
+			"cf-supplier-btn",
+			"fr",
+			".fr"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "D:\\web\\app-newpro"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "dev/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5530,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								802,
+								802
+							],
+							[
+								843,
+								843
+							],
+							[
+								2922,
+								2922
+							],
+							[
+								3778,
+								3778
+							],
+							[
+								4343,
+								4343
+							],
+							[
+								4973,
+								4973
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 338.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dev/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1556,
+								1556
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1737,
+								1737
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 234.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 240.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"999",
+				"new\\new\\new\\css\\admin_9947b49_9947b49_9947b49.css"
+			],
+			[
+				"indextpl",
+				"templates\\index.tpl.php"
+			],
+			[
+				"inde",
+				"css\\index.css"
+			],
+			[
+				"js/buyer/view/productdetailmodule",
+				"C\\js\\buyer\\view\\productDetailModule.js"
+			],
+			[
+				"/js/buyer/view/searchmodule.js",
+				"C\\js\\buyer\\view\\searchModule.js"
+			],
+			[
+				"/view/buyerindexmodule.js",
+				"C\\js\\buyer\\view\\buyerIndexModule.js"
+			],
+			[
+				"/js/buyer/view/pushspcard.js",
+				"C\\js\\buyer\\view\\pushSpCard.js"
+			],
+			[
+				"/buyer/view/buyerindexmodule.js",
+				"C\\js\\buyer\\view\\buyerIndexModule.js"
+			],
+			[
+				"fra",
+				"css\\supplier\\theme\\default\\frame.css"
+			],
+			[
+				"skype",
+				"js\\page\\skype-uri.js"
+			],
+			[
+				"search.css",
+				"css\\page\\search.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\work\\private\\private.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 372.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

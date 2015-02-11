@@ -1,0 +1,19 @@
+<div ms-controller="newCtrl">
+  <div class="slider" id="slider">
+    <div class="slide-group">
+      <div class="slide" ms-repeat="slides"><a ms-href="#!/news/{{el.id}}"><img ms-src="{{el.src}}" alt="" height="200"></a></div>
+    </div>
+  </div>
+  <ul class="table-view">
+    <li class="table-view-cell" ms-repeat="items">
+      <a ms-href="#!/news/{{el.id}}">
+        <h4>{{el.name}}</h4>
+        <div class="time">{{el.time}}</div>
+        <div class="media">
+          <img ms-src="{{el.img}}" alt="{{el.name}}" class="media-object pull-left" width="90" height="90">
+          <div class="media-body">{{el.desc | slice(90)}}</div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
